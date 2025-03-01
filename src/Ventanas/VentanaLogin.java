@@ -99,7 +99,10 @@ public class VentanaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnInciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInciarSesionActionPerformed
-        // TODO add your handling code here:
+        VentanaDashBoard dashB = new VentanaDashBoard();
+        dashB.setVisible(true);
+        dashB.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_btnInciarSesionActionPerformed
 
     /**
