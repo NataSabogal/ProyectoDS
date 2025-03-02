@@ -35,6 +35,7 @@ public class VentanaAdminPagos extends javax.swing.JFrame {
         btnRegistrarPago = new javax.swing.JButton();
         btnRegistrarPago1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        btnAtrasAdminPagos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,10 +46,22 @@ public class VentanaAdminPagos extends javax.swing.JFrame {
         jLabel3.setText("Valor:");
 
         btnRegistrarPago.setText("Registrar Pago");
+        btnRegistrarPago.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarPagoActionPerformed(evt);
+            }
+        });
 
         btnRegistrarPago1.setText("Eliminar Pago");
 
         jLabel1.setText("Nombre: ");
+
+        btnAtrasAdminPagos.setText("⤺");
+        btnAtrasAdminPagos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasAdminPagosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -77,11 +90,16 @@ public class VentanaAdminPagos extends javax.swing.JFrame {
                             .addComponent(btnRegistrarPago1)
                             .addComponent(btnRegistrarPago))))
                 .addContainerGap(93, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnAtrasAdminPagos, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addComponent(btnAtrasAdminPagos)
+                .addGap(3, 3, 3)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -115,6 +133,19 @@ public class VentanaAdminPagos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegistrarPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarPagoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistrarPagoActionPerformed
+
+    private void btnAtrasAdminPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasAdminPagosActionPerformed
+        // TODO add your handling code here:
+        VentanaDashBoard panel = new VentanaDashBoard();
+        panel.setVisible(true);
+        panel.setLocationRelativeTo(null);
+        this.dispose();
+                 
+    }//GEN-LAST:event_btnAtrasAdminPagosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,6 +183,7 @@ public class VentanaAdminPagos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAtrasAdminPagos;
     private javax.swing.JButton btnRegistrarPago;
     private javax.swing.JButton btnRegistrarPago1;
     private javax.swing.JLabel jLabel1;
