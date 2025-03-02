@@ -49,6 +49,11 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
         btnBuscar.setText("Buscar");
 
         btnDetallesCliente.setText("Detalles Cliente");
+        btnDetallesCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDetallesClienteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -111,6 +116,13 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnDetallesClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDetallesClienteActionPerformed
+        VentanaDetallesCliente detalles = new VentanaDetallesCliente();
+        detalles.setVisible(true);
+        detalles.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnDetallesClienteActionPerformed
 
     /**
      * @param args the command line arguments
