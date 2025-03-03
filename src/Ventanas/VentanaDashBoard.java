@@ -126,8 +126,7 @@ public class VentanaDashBoard extends javax.swing.JFrame {
         VentanaRegistro gestionCliEntr = new VentanaRegistro();
         gestionCliEntr.setVisible(true);
         gestionCliEntr.setLocationRelativeTo(null);
-        this.dispose();           
-        povedita el mejor
+        this.dispose();
     }//GEN-LAST:event_btnGestionClienteEntreActionPerformed
 
     private void btnControlAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnControlAsistenciaActionPerformed
