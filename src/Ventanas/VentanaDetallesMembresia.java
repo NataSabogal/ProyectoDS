@@ -8,7 +8,7 @@ package Ventanas;
  *
  * @author bran-
  */
-public class VentanaDetallesMembresia extends javax.swing.JPanel {
+public class VentanaDetallesMembresia extends javax.swing.JFrame {
 
     /**
      * Creates new form DetallesMembresia
@@ -32,14 +32,22 @@ public class VentanaDetallesMembresia extends javax.swing.JPanel {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         btnGuardarCambiosDetallesMembresia = new javax.swing.JButton();
+        btnAtrasPlanesMembresia = new javax.swing.JButton();
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Detalles Membresia"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Detalles Membresia", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Shree Devanagari 714", 0, 18))); // NOI18N
 
         txtTipoDePlanDetallesMembresia.setText("Tipo de Plan :");
 
         txtPrecioDetallesMembresia.setText("Precio :");
 
         btnGuardarCambiosDetallesMembresia.setText("Guardar Cambios");
+
+        btnAtrasPlanesMembresia.setText("⤺");
+        btnAtrasPlanesMembresia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasPlanesMembresiaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -51,29 +59,35 @@ public class VentanaDetallesMembresia extends javax.swing.JPanel {
                     .addComponent(txtPrecioDetallesMembresia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtTipoDePlanDetallesMembresia, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                    .addComponent(jTextField2))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(72, 72, 72))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(84, 84, 84)
                 .addComponent(btnGuardarCambiosDetallesMembresia)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAtrasPlanesMembresia, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addContainerGap()
+                .addComponent(btnAtrasPlanesMembresia)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtTipoDePlanDetallesMembresia)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPrecioDetallesMembresia)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(60, 60, 60)
+                .addGap(47, 47, 47)
                 .addComponent(btnGuardarCambiosDetallesMembresia)
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -94,8 +108,16 @@ public class VentanaDetallesMembresia extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnAtrasPlanesMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasPlanesMembresiaActionPerformed
+        VentanaPlanesMembresia panel = new VentanaPlanesMembresia();
+        panel.setVisible(true);
+        panel.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnAtrasPlanesMembresiaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAtrasPlanesMembresia;
     private javax.swing.JButton btnGuardarCambiosDetallesMembresia;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
@@ -103,4 +125,8 @@ public class VentanaDetallesMembresia extends javax.swing.JPanel {
     private javax.swing.JLabel txtPrecioDetallesMembresia;
     private javax.swing.JLabel txtTipoDePlanDetallesMembresia;
     // End of variables declaration//GEN-END:variables
+
+    void setLocationRelativeTo(VentanaPlanesMembresia aThis) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

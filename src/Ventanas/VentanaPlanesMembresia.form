@@ -38,7 +38,9 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Planes Membresia"/>
+            <TitledBorder title="Planes Membresia">
+              <Font PropertyName="font" name="Shree Devanagari 714" size="18" style="0"/>
+            </TitledBorder>
           </Border>
         </Property>
       </Properties>
@@ -49,10 +51,6 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="txtNombreUsuarioPlanesMembresia" min="-2" pref="136" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="txtValorPlanes" alignment="0" max="32767" attributes="0"/>
@@ -65,15 +63,21 @@
                           </Group>
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="txtNombreUsuarioPlanesMembresia" min="-2" pref="136" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnAtrasPlanesMembresia" min="-2" pref="49" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnEliminarPlan" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                      <Component id="btnAgregarPlanes" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                      <Component id="btnDetallesPlanes" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                      <Component id="btnModificarPlan" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="btnModificarPlan" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnDetallesPlanes" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnAgregarPlanes" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnEliminarPlan" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
@@ -82,9 +86,12 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="txtNombreUsuarioPlanesMembresia" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txtNombreUsuarioPlanesMembresia" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAtrasPlanesMembresia" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtTipoPlan" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="cbPlanesMembresia" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -94,15 +101,15 @@
                       <Component id="txtValorPlanes" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
                   <Component id="btnDetallesPlanes" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnAgregarPlanes" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnModificarPlan" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="btnEliminarPlan" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -128,10 +135,11 @@
         <Component class="javax.swing.JComboBox" name="cbPlanesMembresia">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="3">
-                <StringItem index="0" value="Mensaul&#x9;"/>
-                <StringItem index="1" value="Quincenal"/>
-                <StringItem index="2" value="Anueal"/>
+              <StringArray count="4">
+                <StringItem index="0" value="Seleccionar"/>
+                <StringItem index="1" value="Mensual"/>
+                <StringItem index="2" value="Quincenal"/>
+                <StringItem index="3" value="Anual"/>
               </StringArray>
             </Property>
           </Properties>
@@ -143,6 +151,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Detalles Plan"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDetallesPlanesActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnAgregarPlanes">
           <Properties>
@@ -158,6 +169,14 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Eliminar Plan"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAtrasPlanesMembresia">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x293a;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtrasPlanesMembresiaActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

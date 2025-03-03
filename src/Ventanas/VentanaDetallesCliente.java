@@ -36,6 +36,7 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
         txtMembresia = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         btnGuardarCambios = new javax.swing.JButton();
+        btnAtrasDetallesCliente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,6 +54,13 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
         btnGuardarCambios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarCambiosActionPerformed(evt);
+            }
+        });
+
+        btnAtrasDetallesCliente.setText("⤺");
+        btnAtrasDetallesCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasDetallesClienteActionPerformed(evt);
             }
         });
 
@@ -79,7 +87,9 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(50, 50, 50)
                         .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAtrasDetallesCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(113, Short.MAX_VALUE)
                 .addComponent(btnGuardarCambios)
@@ -88,10 +98,13 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnAtrasDetallesCliente))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -129,6 +142,13 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarCambiosActionPerformed
 
+    private void btnAtrasDetallesClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasDetallesClienteActionPerformed
+        VentanaBusquedaCliente busqueda = new VentanaBusquedaCliente();
+        busqueda.setVisible(true);
+        busqueda.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnAtrasDetallesClienteActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -165,6 +185,7 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAtrasDetallesCliente;
     private javax.swing.JButton btnGuardarCambios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
