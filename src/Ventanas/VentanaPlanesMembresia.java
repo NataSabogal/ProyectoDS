@@ -55,6 +55,11 @@ public class VentanaPlanesMembresia extends javax.swing.JPanel {
         cbPlanesMembresia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mensaul\t", "Quincenal", "Anueal" }));
 
         btnDetallesPlanes.setText("Detalles Plan");
+        btnDetallesPlanes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDetallesPlanesActionPerformed(evt);
+            }
+        });
 
         btnAgregarPlanes.setText("Agregar Plan");
 
@@ -155,6 +160,10 @@ public class VentanaPlanesMembresia extends javax.swing.JPanel {
         panel.setLocationRelativeTo(null);
         //this.dispose();               
     }//GEN-LAST:event_btnAtrasPlanesMembresiaActionPerformed
+
+    private void btnDetallesPlanesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDetallesPlanesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDetallesPlanesActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
