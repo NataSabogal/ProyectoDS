@@ -139,7 +139,6 @@ public class VentanaAdminPagos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegistrarPagoActionPerformed
 
     private void btnAtrasAdminPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasAdminPagosActionPerformed
-        // TODO add your handling code here:
         VentanaDashBoard panel = new VentanaDashBoard();
         panel.setVisible(true);
         panel.setLocationRelativeTo(null);

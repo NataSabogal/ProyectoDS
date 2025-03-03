@@ -58,6 +58,11 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
         });
 
         btnAtrasDetallesCliente.setText("⤺");
+        btnAtrasDetallesCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasDetallesClienteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -136,6 +141,13 @@ public class VentanaDetallesCliente extends javax.swing.JFrame {
     private void btnGuardarCambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCambiosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarCambiosActionPerformed
+
+    private void btnAtrasDetallesClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasDetallesClienteActionPerformed
+        VentanaBusquedaCliente busqueda = new VentanaBusquedaCliente();
+        busqueda.setVisible(true);
+        busqueda.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btnAtrasDetallesClienteActionPerformed
 
     /**
      * @param args the command line arguments

@@ -33,8 +33,8 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtMembresia = new javax.swing.JTextField();
-        btnBuscar = new javax.swing.JButton();
         btnDetallesCliente = new javax.swing.JButton();
+        btnBuscarGestionEntrenadores = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,12 +46,17 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
 
         jLabel3.setText("Membresia:");
 
-        btnBuscar.setText("Buscar");
-
         btnDetallesCliente.setText("Detalles Cliente");
         btnDetallesCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDetallesClienteActionPerformed(evt);
+            }
+        });
+
+        btnBuscarGestionEntrenadores.setText("🔎");
+        btnBuscarGestionEntrenadores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarGestionEntrenadoresActionPerformed(evt);
             }
         });
 
@@ -75,8 +80,8 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
                         .addGap(50, 50, 50)
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                .addComponent(btnBuscar)
-                .addContainerGap())
+                .addComponent(btnBuscarGestionEntrenadores, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnDetallesCliente)
@@ -89,7 +94,7 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscar))
+                    .addComponent(btnBuscarGestionEntrenadores))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -123,6 +128,10 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
         detalles.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_btnDetallesClienteActionPerformed
+
+    private void btnBuscarGestionEntrenadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarGestionEntrenadoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarGestionEntrenadoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,7 +169,7 @@ public class VentanaBusquedaCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnBuscarGestionEntrenadores;
     private javax.swing.JButton btnDetallesCliente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

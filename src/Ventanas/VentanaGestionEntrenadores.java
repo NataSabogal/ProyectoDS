@@ -54,7 +54,7 @@ public class VentanaGestionEntrenadores extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Gestion Entrenadores"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Gestion Entrenadores", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Shree Devanagari 714", 0, 18))); // NOI18N
 
         txtBuscarGestionEntrenadores.setText("Buscar");
 
@@ -291,7 +291,7 @@ public class VentanaGestionEntrenadores extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 281, Short.MAX_VALUE)
+            .addGap(0, 296, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -324,7 +324,6 @@ public class VentanaGestionEntrenadores extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEliminarGestionEntrenadores1ActionPerformed
 
     private void btnAtrasAdminPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasAdminPagosActionPerformed
-        // TODO add your handling code here:
         VentanaDashBoard panel = new VentanaDashBoard();
         panel.setVisible(true);
         panel.setLocationRelativeTo(null);

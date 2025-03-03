@@ -4,6 +4,8 @@
  */
 package proyectodiseniogestiongimnasio;
 
+import Ventanas.VentanaCrearAdmin;
+
 /**
  *
  * @author nataliasabogalrada
@@ -15,6 +17,10 @@ public class ProyectoDisenioGestionGimnasio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Ventanas.VentanaCrearAdmin principal = new VentanaCrearAdmin();
+        principal.setVisible(true);
+        principal.setLocationRelativeTo(null);
+
     }
-    
+
 }

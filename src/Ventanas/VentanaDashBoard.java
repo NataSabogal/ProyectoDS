@@ -36,6 +36,8 @@ public class VentanaDashBoard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DashBoard", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Shree Devanagari 714", 0, 18))); // NOI18N
+
         btnGestionClienteEntre.setText("Gestión de clientes y entrenadores");
         btnGestionClienteEntre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,12 +85,12 @@ public class VentanaDashBoard extends javax.swing.JFrame {
                     .addComponent(btnAdminPagos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnAsigEntre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnPlanesMembresia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(95, Short.MAX_VALUE)
+                .addContainerGap(60, Short.MAX_VALUE)
                 .addComponent(btnGestionClienteEntre)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnPlanesMembresia)
@@ -130,7 +132,6 @@ public class VentanaDashBoard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGestionClienteEntreActionPerformed
 
     private void btnControlAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnControlAsistenciaActionPerformed
-        // TODO add your handling code here:
         VentanaControlDeAsistencia controlAsis = new VentanaControlDeAsistencia();
         controlAsis.setVisible(true);
         controlAsis.setLocationRelativeTo(null);
@@ -138,7 +139,6 @@ public class VentanaDashBoard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnControlAsistenciaActionPerformed
 
     private void btnAdminPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminPagosActionPerformed
-        // TODO add your handling code here:
         VentanaAdminPagos adminPagos = new VentanaAdminPagos();
         adminPagos.setVisible(true);
         adminPagos.setLocationRelativeTo(null);
@@ -146,7 +146,6 @@ public class VentanaDashBoard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdminPagosActionPerformed
 
     private void btnAsigEntreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsigEntreActionPerformed
-        // TODO add your handling code here:
         VentanaGestionEntrenadores gestionEntre = new VentanaGestionEntrenadores();
         gestionEntre.setVisible(true);
         gestionEntre.setLocationRelativeTo(null);
@@ -154,11 +153,10 @@ public class VentanaDashBoard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAsigEntreActionPerformed
 
     private void btnPlanesMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlanesMembresiaActionPerformed
-        // TODO add your handling code here:
-//        VentanaPlanesMembresia planesMembr = new VentanaPlanesMembresia();
-//        planesMembr.setVisible(true);
-//        planesMembr.setLocationRelativeTo(null);
-//        this.dispose();
+       VentanaPlanesMembresia mem = new VentanaPlanesMembresia();
+       mem.setVisible(true);
+       mem.setLocationRelativeTo(null);
+       this.dispose();
     }//GEN-LAST:event_btnPlanesMembresiaActionPerformed
 
     /**
