@@ -4,7 +4,7 @@
  */
 package proyectodiseniogestiongimnasio;
 
-import Ventanas.VentanaCrearAdmin;
+import Ventanas.VentanaLogin;
 
 /**
  *
@@ -17,10 +17,10 @@ public class ProyectoDisenioGestionGimnasio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Ventanas.VentanaCrearAdmin principal = new VentanaCrearAdmin();
+        VentanaLogin principal = new VentanaLogin();
         principal.setVisible(true);
         principal.setLocationRelativeTo(null);
-
+        
     }
 
 }
