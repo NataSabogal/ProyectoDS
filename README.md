@@ -1,7 +1,7 @@
-# GymManager Project
+# Gestion para un Gimnasio
 
 ## Overview
-GymManager is a project developed as part of the UniversidadS3 course. It is designed to manage gym memberships, track member activities, and handle various administrative tasks.
+El proyecto consiste en el desarrollo de un sistema de gestión para un gimnasio. La aplicación permitirá la administración eficiente de clientes, planes de membresía, control de asistencia, pagos y gestión de entrenadores
 
 ## Features
 - Member registration and management
@@ -35,4 +35,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For any questions or suggestions, please contact:
-- Natalia Sabogal Rada - [email@example.com](mailto:email@example.com)
+- Natalia Sabogal Rada - [natalia.sabogal.1766@eam.edu.co](mailto:natalia.sabogal.1766@eam.edu.co)
