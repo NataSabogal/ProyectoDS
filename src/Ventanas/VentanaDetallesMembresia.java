@@ -103,4 +103,8 @@ public class VentanaDetallesMembresia extends javax.swing.JPanel {
     private javax.swing.JLabel txtPrecioDetallesMembresia;
     private javax.swing.JLabel txtTipoDePlanDetallesMembresia;
     // End of variables declaration//GEN-END:variables
+
+    void setLocationRelativeTo(VentanaPlanesMembresia aThis) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
